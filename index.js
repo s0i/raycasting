@@ -136,12 +136,11 @@ async function loadImageData(url) {
                     break;
                 case 'AltLeft':
                 case 'AltRight':
-                    player.modifierKey = true;
+                    player.altKey = true;
                     break;
                 case 'ShiftLeft':
                 case 'ShiftRight':
-                    player.fastTurn = true;
-                    player.sprinting = true;
+                    player.shiftKey = true;
                     break;
             }
         }
@@ -167,12 +166,11 @@ async function loadImageData(url) {
                     break;
                 case 'AltLeft':
                 case 'AltRight':
-                    player.modifierKey = false;
+                    player.altKey = false;
                     break;
                 case 'ShiftLeft':
                 case 'ShiftRight':
-                    player.fastTurn = false;
-                    player.sprinting = false;
+                    player.shiftKey = false;
                     break;
             }
         }
